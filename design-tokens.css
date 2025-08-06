@@ -1,5 +1,39 @@
 /* Design Tokens - News Homepage */
 
+/* ===== FONTS ===== */
+@font-face {
+  font-family: 'Inter';
+  src: url('./assets/fonts/Inter-VariableFont_slnt,wght.ttf') format('truetype-variations');
+  font-weight: 100 900;
+  font-style: oblique -10deg 0deg;
+  font-display: swap;
+}
+
+/* Fallback for browsers that don't support variable fonts */
+@font-face {
+  font-family: 'Inter';
+  src: url('./assets/fonts/static/Inter-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Inter';
+  src: url('./assets/fonts/static/Inter-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Inter';
+  src: url('./assets/fonts/static/Inter-ExtraBold.ttf') format('truetype');
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+
 /* ===== COLORS ===== */
 :root {
   /* Primary Colors */
