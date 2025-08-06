@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <title>Frontend Mentor | News homepage</title>
+  
+  <!-- Import design tokens -->
+  <link rel="stylesheet" href="design-tokens.css">
+  <link rel="stylesheet" href="styles.css">
+  
+  <!-- Google Fonts - Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap" rel="stylesheet">
+</head>
+  <body>
+    <!-- Skip link for accessibility -->
+    <a href="#main" class="skip-link">Skip to main content</a>
+    
+    <div class="container">
+    <!-- Header -->
+    <header class="header">
+      <div class="header-content">
+        <div class="logo">
+          <img src="./assets/images/logo.svg" alt="W." class="logo-image">
+        </div>
+        
+        <!-- Desktop Navigation -->
+        <nav class="nav nav-desktop">
+          <ul class="nav-list">
+            <li class="nav-item">
+              <a href="#" class="nav-link">Home</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">New</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">Popular</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">Trending</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">Categories</a>
+            </li>
+          </ul>
+        </nav>
+        
+        <!-- Mobile Menu Button -->
+        <button class="menu-toggle" aria-label="Toggle menu" aria-expanded="false">
+          <img src="./assets/images/icon-menu.svg" alt="" class="menu-toggle-icon">
+        </button>
+      </div>
+    </header>
+
+    <!-- Main Content -->
+    <main id="main" class="main">
+      <!-- Hero Section -->
+      <section class="hero">
+        <div class="hero-image">
+          <picture>
+            <source media="(min-width: 768px)" srcset="./assets/images/image-web-3-desktop.jpg">
+            <img src="./assets/images/image-web-3-mobile.jpg" alt="Web 3.0 illustration" class="hero-img">
+          </picture>
+        </div>
+        
+        <div class="hero-content">
+          <h1 class="hero-title preset-1">The Bright Future of Web 3.0?</h1>
+          
+          <div class="hero-description">
+            <p class="hero-text preset-6">
+              We dive into the next evolution of the web that claims to put the power of the platforms back into the hands of the people. 
+              But is it really fulfilling its promise?
+            </p>
+            <button class="btn btn-primary preset-7">Read more</button>
+          </div>
+        </div>
+      </section>
+
+      <!-- Sidebar -->
+      <aside class="sidebar">
+        <h2 class="sidebar-title preset-3">New</h2>
+        
+        <div class="sidebar-content">
+          <article class="sidebar-item">
+            <h3 class="sidebar-item-title preset-4">
+              <a href="#" class="sidebar-item-link">Hydrogen VS Electric Cars</a>
+            </h3>
+            <p class="sidebar-item-text preset-6">
+              Will hydrogen-fueled cars ever catch up to EVs?
+            </p>
+          </article>
+          
+          <hr class="sidebar-divider">
+          
+          <article class="sidebar-item">
+            <h3 class="sidebar-item-title preset-4">
+              <a href="#" class="sidebar-item-link">The Downsides of AI Artistry</a>
+            </h3>
+            <p class="sidebar-item-text preset-6">
+              What are the possible adverse effects of on-demand AI image generation?
+            </p>
+          </article>
+          
+          <hr class="sidebar-divider">
+          
+          <article class="sidebar-item">
+            <h3 class="sidebar-item-title preset-4">
+              <a href="#" class="sidebar-item-link">Is VC Funding Drying Up?</a>
+            </h3>
+            <p class="sidebar-item-text preset-6">
+              Private funding by VC firms is down 50% YOY. We take a look at what that means.
+            </p>
+          </article>
+        </div>
+      </aside>
+
+      <!-- Featured Articles -->
+      <section class="featured">
+        <article class="featured-item">
+          <div class="featured-image">
+            <img src="./assets/images/image-retro-pcs.jpg" alt="Retro PCs" class="featured-img">
+          </div>
+          <div class="featured-content">
+            <span class="featured-number preset-3">01</span>
+            <h3 class="featured-title preset-5">
+              <a href="#" class="featured-link">Reviving Retro PCs</a>
+            </h3>
+            <p class="featured-text preset-6">
+              What happens when old PCs are given modern upgrades?
+            </p>
+          </div>
+        </article>
+        
+        <article class="featured-item">
+          <div class="featured-image">
+            <img src="./assets/images/image-top-laptops.jpg" alt="Top laptops" class="featured-img">
+          </div>
+          <div class="featured-content">
+            <span class="featured-number preset-3">02</span>
+            <h3 class="featured-title preset-5">
+              <a href="#" class="featured-link">Top 10 Laptops of 2022</a>
+            </h3>
+            <p class="featured-text preset-6">
+              Our best picks for various needs and budgets.
+            </p>
+          </div>
+        </article>
+        
+        <article class="featured-item">
+          <div class="featured-image">
+            <img src="./assets/images/image-gaming-growth.jpg" alt="Gaming growth" class="featured-img">
+          </div>
+          <div class="featured-content">
+            <span class="featured-number preset-3">03</span>
+            <h3 class="featured-title preset-5">
+              <a href="#" class="featured-link">The Growth of Gaming</a>
+            </h3>
+            <p class="featured-text preset-6">
+              How the pandemic has sparked fresh opportunities.
+            </p>
+          </div>
+        </article>
+      </section>
+    </main>
+
+            <!-- Mobile Menu Dialog -->
+        <dialog class="menu-dialog">
+          <div class="menu-dialog-content">
+            <button class="menu-dialog-close" aria-label="Close menu">
+              <img src="./assets/images/icon-menu-close.svg" alt="" class="menu-dialog-close-icon">
+            </button>
+            
+            <nav class="nav nav-mobile">
+              <ul class="nav-list">
+                <li class="nav-item">
+                  <a href="#" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link">New</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link">Popular</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link">Trending</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link">Categories</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </dialog>
+  </div>
+
+  <script src="script.js" type="module"></script>
+</body>
+</html>

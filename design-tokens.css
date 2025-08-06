@@ -1,0 +1,166 @@
+/* Design Tokens - News Homepage */
+
+/* ===== COLORS ===== */
+:root {
+  /* Primary Colors */
+  --color-gold: hsl(35, 77%, 62%); /* #E9AA52 */
+  --color-red: hsl(4, 85%, 63%); /* #F15D51 */
+  
+  /* Neutral Colors */
+  --color-white: hsl(0, 100%, 100%); /* #FFFFFF */
+  --color-black: hsl(0, 0%, 0%); /* #000000 */
+  --color-grey-300: hsl(233, 8%, 79%); /* #C5C6CE */
+  --color-grey-200: hsl(0, 0%, 85%); /* #D8D8D8 */
+  --color-navy-950: hsl(240, 100%, 5%); /* #00001A */
+  --color-navy-600: hsl(236, 13%, 42%); /* #5E607A */
+}
+
+/* ===== SPACING ===== */
+:root {
+  --spacing-100: 0.5rem; /* 8px */
+  --spacing-300: 1.5rem; /* 24px */
+  --spacing-400: 2rem; /* 32px */
+  --spacing-500: 2.5rem; /* 40px */
+  --spacing-800: 4rem; /* 64px */
+  --spacing-1100: 5.5rem; /* 88px */
+}
+
+/* ===== TYPOGRAPHY ===== */
+:root {
+  /* Font Family */
+  --font-family: 'Inter', sans-serif;
+  
+  /* Font Weights */
+  --font-weight-regular: 400;
+  --font-weight-bold: 700;
+  --font-weight-extra-bold: 800;
+}
+
+/* ===== FONT PRESETS ===== */
+
+/* Preset 1: Inter Extra Bold, 56px, 56px line height, 0px letter spacing */
+.preset-1 {
+  font-family: var(--font-family);
+  font-weight: var(--font-weight-extra-bold);
+  font-size: 3.5rem; /* 56px */
+  line-height: 3.5rem; /* 56px */
+  letter-spacing: 0;
+}
+
+/* Preset 2: Inter Extra Bold, 40px, 40px line height, 0px letter spacing */
+.preset-2 {
+  font-family: var(--font-family);
+  font-weight: var(--font-weight-extra-bold);
+  font-size: 2.5rem; /* 40px */
+  line-height: 2.5rem; /* 40px */
+  letter-spacing: 0;
+}
+
+/* Preset 3: Inter Bold, 32px, 32px line height, 0px letter spacing */
+.preset-3 {
+  font-family: var(--font-family);
+  font-weight: var(--font-weight-bold);
+  font-size: 2rem; /* 32px */
+  line-height: 2rem; /* 32px */
+  letter-spacing: 0;
+}
+
+/* Preset 4: Inter Extra Bold, 20px, 24px line height, 0px letter spacing */
+.preset-4 {
+  font-family: var(--font-family);
+  font-weight: var(--font-weight-extra-bold);
+  font-size: 1.25rem; /* 20px */
+  line-height: 1.5rem; /* 24px */
+  letter-spacing: 0;
+}
+
+/* Preset 5: Inter Extra Bold, 18px, 24px line height, 0px letter spacing */
+.preset-5 {
+  font-family: var(--font-family);
+  font-weight: var(--font-weight-extra-bold);
+  font-size: 1.125rem; /* 18px */
+  line-height: 1.5rem; /* 24px */
+  letter-spacing: 0;
+}
+
+/* Preset 6: Inter Regular, 15px, 26px line height, 0px letter spacing */
+.preset-6 {
+  font-family: var(--font-family);
+  font-weight: var(--font-weight-regular);
+  font-size: 0.9375rem; /* 15px */
+  line-height: 1.625rem; /* 26px */
+  letter-spacing: 0;
+}
+
+/* Preset 7: Inter Bold, 14px, 24px line height, 4.38px letter spacing */
+.preset-7 {
+  font-family: var(--font-family);
+  font-weight: var(--font-weight-bold);
+  font-size: 0.875rem; /* 14px */
+  line-height: 1.5rem; /* 24px */
+  letter-spacing: 0.27375rem; /* 4.38px */
+}
+
+/* ===== RESPONSIVE FONT SIZES ===== */
+/* Mobile-first approach - override font sizes for larger screens */
+
+@media (min-width: 768px) {
+  .preset-1 {
+    font-size: 3.5rem; /* Keep 56px for tablet/desktop */
+  }
+  
+  .preset-2 {
+    font-size: 2.5rem; /* Keep 40px for tablet/desktop */
+  }
+  
+  .preset-3 {
+    font-size: 2rem; /* Keep 32px for tablet/desktop */
+  }
+  
+  .preset-4 {
+    font-size: 1.25rem; /* Keep 20px for tablet/desktop */
+  }
+  
+  .preset-5 {
+    font-size: 1.125rem; /* Keep 18px for tablet/desktop */
+  }
+  
+  .preset-6 {
+    font-size: 0.9375rem; /* Keep 15px for tablet/desktop */
+  }
+  
+  .preset-7 {
+    font-size: 0.875rem; /* Keep 14px for tablet/desktop */
+  }
+}
+
+/* Mobile adjustments - reduce font sizes for smaller screens */
+@media (max-width: 767px) {
+  .preset-1 {
+    font-size: 2rem; /* Reduce to 32px on mobile */
+  }
+  
+  .preset-2 {
+    font-size: 1.75rem; /* Reduce to 28px on mobile */
+  }
+  
+  .preset-3 {
+    font-size: 1.5rem; /* Reduce to 24px on mobile */
+  }
+  
+  .preset-4 {
+    font-size: 1.125rem; /* Reduce to 18px on mobile */
+  }
+  
+  .preset-5 {
+    font-size: 1rem; /* Reduce to 16px on mobile */
+  }
+  
+  .preset-6 {
+    font-size: 0.875rem; /* Reduce to 14px on mobile */
+  }
+  
+  .preset-7 {
+    font-size: 0.8125rem; /* Reduce to 13px on mobile */
+  }
+} 
