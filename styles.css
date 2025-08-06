@@ -130,7 +130,7 @@ a, button {
 
 .hero-image {
   inline-size: 100%;
-  aspect-ratio: 16 / 9;
+  aspect-ratio: 73 / 30;
   overflow: hidden;
   border-radius: 8px;
 }
@@ -175,6 +175,7 @@ a, button {
 .btn-primary {
   background-color: var(--color-red);
   color: var(--color-white);
+  text-transform: uppercase;
 }
 
 .btn-primary:where(:hover, :focus-visible){
@@ -378,11 +379,6 @@ a, button {
   .hero {
     display: grid;
     gap: var(--spacing-400);
-  }
-  
-  .hero-image {
-    inline-size: 100%;
-    aspect-ratio: 16 / 9;
   }
   
   .hero-content {
