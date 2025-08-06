@@ -33,6 +33,7 @@ canvas,
 svg {
   display: block;
   max-inline-size: 100%;
+  line-height: 0;
 }
 
 input,
@@ -236,19 +237,19 @@ a, button {
   display: grid;
   grid-template-columns: 100px 1fr;
   gap: var(--spacing-300);
-  align-items: start;
+  align-items: center;
 }
 
 .featured-image {
   inline-size: 100px;
-  aspect-ratio: 1;
+  aspect-ratio: 4 / 5;
   overflow: hidden;
   border-radius: 4px;
 }
 
 .featured-img {
   inline-size: 100%;
-  block-size: 100%;
+  aspect-ratio: 4 / 5;
   object-fit: cover;
 }
 
@@ -258,7 +259,7 @@ a, button {
 }
 
 .featured-number {
-  color: var(--color-grey-300);
+  color: var(--color-red);
   line-height: 1;
 }
 
@@ -302,6 +303,7 @@ a, button {
   transition: translate .3s cubic-bezier(0.78, 0, 0.22, 1);
   transition-behavior: allow-discrete;
   @starting-style {
+    /* biome-ignore lint/suspicious/noDuplicateProperties: it is only duplicated beacuse nested in @rule */
     translate: 100% 0;
     transition: translate .3s cubic-bezier(0.78, 0, 0.22, 1);
     transition-behavior: allow-discrete;
@@ -406,19 +408,7 @@ a, button {
     display: grid;
     gap: var(--spacing-400);
   }
-  
-  .featured-item {
-    display: grid;
-    grid-template-columns: 100px 1fr;
-    gap: var(--spacing-300);
-    align-items: start;
-  }
-  
-  .featured-image {
-    inline-size: 100px;
-    aspect-ratio: 1;
-  }
-  
+
   .featured-number {
     font-size: 2rem; /* 32px for tablet */
     line-height: 2rem;
@@ -482,16 +472,6 @@ a, button {
     gap: var(--spacing-400);
   }
   
-  .featured-item {
-    grid-template-columns: 1fr;
-    gap: var(--spacing-300);
-  }
-  
-  .featured-image {
-    inline-size: 100%;
-    aspect-ratio: 1;
-  }
-  
   .menu-toggle {
     display: none;
   }
@@ -513,10 +493,6 @@ a, button {
   
   .hero-content {
     grid-template-columns: 1fr;
-  }
-  
-  .featured-item {
-    grid-template-columns: 100px 1fr;
   }
 }
 
