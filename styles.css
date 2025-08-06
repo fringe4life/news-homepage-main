@@ -85,7 +85,7 @@ a, button {
 
 .logo-image {
   inline-size: 4rem; /* 64px */
-  aspect-ratio: 1;
+  aspect-ratio: 8 / 5;
 }
 
 /* ===== NAVIGATION ===== */
@@ -113,7 +113,7 @@ a, button {
 
 .menu-toggle-icon {
   inline-size: 2.5rem; /* 40px */
-  aspect-ratio: 1;
+  aspect-ratio: 5 / 2;
 }
 
 /* ===== MAIN CONTENT ===== */
